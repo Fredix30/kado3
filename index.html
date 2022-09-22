@@ -1,156 +1,117 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<html>
+<meta charset='UTF-8'/><meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/><meta content='IE=edge' http-equiv='X-UA-Compatible'/><link href="https://feeldreams.github.io/yukbuka/style.css" rel="stylesheet" type="text/css" /><script src="https://feeldreams.github.io/yukbuka/script.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script><script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Happy Birthday!!! :)</title>
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400" rel="stylesheet" />
-  <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
-  <link rel="stylesheet" href="styles/main.css" />
+<title>Script HTML HBD</title>
+<!-- 
+  Made with love by Rayys!
+     Blog: https://PalingIT.com
+     Instagram: @rayyarrr
+     TikTok: @rayy4r
+     Email: rayyar0703@gmail.com
+  Thanks to all <3
+-->
 </head>
-
 <body>
+	
+   <!-- Ganti Audio di sini -->
+   <audio src="https://feeldreams.github.io/anotherme.mp3" id="linkmp3"></audio>
+   
+   <div id="bodyblur">
+     <!-- Wallpaper --><img src="https://feeldreams.github.io/wpemandangan.jpg" id="wallpaper"/>
+   </div>
+   
+   <div id='Content'>
 
-  <audio class="song" loop autoplay>
-    <source src="./music/hbd.mpeg">
-    </source>
-    Your browser isn't invited for super fun audio time.
-  </audio>
+     <div id="suratin" onClick="memulai();">
+       <!-- Tombol Surat --><img src="https://rayyscoding.github.io/envelope.png"/>
+     </div>
+       <p id="ket">Klik Suratnya!</p>
+    
+     <div><blockquote id='bq'>
+       <div>
+         <!-- Stiker untuk Konten -->
+         <img src="https://drive.google.com/file/d/1afP3_p6qn3_tk9udVOBfSolv97P4SIqa/view?usp=drivesdk" id="fotoakhir"/>
+         <img src="https://feeldreams.github.io/peach1.gif" id="fotoakhir2"/>
+         <img src="https://feeldreams.github.io/peach3.gif" id="fotoakhir3"/>
+         <img src="https://feeldreams.github.io/peachktw.gif" id="fotoakhir4"/>
+       </div>
 
-  <div class="container">
-    <div class="one">
-      <h1 class="one">
-        Hi
-        <span id="name"></span>
-      </h1>
-      <p class="two" id="greetingText">I really like your name btw!</p>
-    </div>
+       <!-- Konten Pembukaan -->
+       <p id="kalimat">Hai, Kamu! 😆</p>
+       <p id="kalimatb">Kamu Ultah ya Hari Ini? 🤭❤️</p>
+       <p id="kalimatc"><b>Selamat Ulang Tahun &gt;&lt;</b></p>
 
-    <div class="three">
-      <p>It's your birthday!! :D</p>
-    </div>
+       <!-- Konten Pertanyaan -->
+       <p id="kalimat1">Mau Kado Dariku Gak Nih? 😃❤️</p>
+       <p id="kalimatb1">Jawab yaa 🤭</p>
+       <p id="kalimatc1"></p>
 
-    <div class="four">
-      <div class="text-box">
-        <p class="hbd-chatbox">
-          Happy birthday to youu!! i wish bla bla bla ,always bla bla bla and bla bla bla also blabla bla ,
-        </p>
-        <p class="fake-btn">Send</p>
-      </div>
-    </div>
+       <!-- Konten Jawaban -->
+       <p id="kalimat2">Okeee! 🥳</p>
+       <p id="kalimatb2">Dalam waktu <b>7 detik</b>, Aku akan memberikanmu 🎁 Kado!</p>
+       <p id="kalimatc2"><b style="font-size:24px"><span id="ctimer">0</span> ⏳</b></p>
 
-    <div class="five">
-      <p class="idea-1">That's most of people is going text u today .</p>
-      <p class="idea-2">But i will not do the same way like them</p>
-      <p class="idea-3">
-        I realised, I wanted to do something<br>
-        <strong>special</strong>
-        .
-      </p>
-      <p class="idea-4">Because,</p>
-      <p class="idea-5">
-        You are Special
-        <span>:)</span>
-      </p>
-      <p class="idea-6">
-        <span>S</span>
-        <span>O</span>
-      </p>
-    </div>
+       <!-- Konten Jawaban 2 -->
+       <p id="kalimat3">Yahh Macet🤣🙏🏻</p>
+       <p id="kalimatb3">Gajadi Ngasih Kado Deh :v</p>
+       <p id="kalimatc3">Jangan marah ya! 😜❤️</p>
+     </blockquote></div>
 
-    <div class="six">
-      <img src="./img/irene.jpg" alt="profile" class="profile-picture" id="imagePath"/>
-      <img src="img/hat.svg" alt="hat" class="hat" />
-      <div class="wish">
-        <h3 class="wish-hbd">Happy Birthday!</h3>
-        <h5 id="wishText">May the js.prototypes always be with you! ;)</h5>
-      </div>
-    </div>
+     <!-- Pesan Ditolak -->
+     <div id="pesanditolak">
+       <img id="stikerditolak" src="https://feeldreams.github.io/weee.gif"/>
+       <p id="kataditolak">Yaudah kalau gak mau 😜</p>
+     </div>
+     
+     <!-- Tombol Multifungsi -->
+     <div id="Tombol">
+       <a id="By" onClick="multifungsi()">
+         <b id="tmbl">Lanjut</b>
+       </a>
+       
+       <a id="Bn" onClick="ditolak()">Engga</a>
+     </div>
+     
+     <!-- Pesan yang dikirim ke WhatsApp -->
+     <span id="pesanWA">Mana kadonya! 😡</span>
+     
+   </div>
 
-    <div class="seven">
-      <div class="baloons">
-        <img src="img/ballon2.svg" alt="" />
-        <img src="img/ballon1.svg" alt="" />
-        <img src="img/ballon3.svg" alt="" />
-        <img src="img/ballon1.svg" alt="" />
-        <img src="img/ballon2.svg" alt="" />
-        <img src="img/ballon3.svg" alt="" />
-        <img src="img/ballon2.svg" alt="" />
-        <img src="img/ballon3.svg" alt="" />
-        <img src="img/ballon1.svg" alt="" />
-        <img src="img/ballon2.svg" alt="" />
-        <img src="img/ballon3.svg" alt="" />
-        <img src="img/ballon2.svg" alt="" />
-        <img src="img/ballon1.svg" alt="" />
-        <img src="img/ballon3.svg" alt="" />
-        <img src="img/ballon2.svg" alt="" />
-        <img src="img/ballon3.svg" alt="" />
-        <img src="img/ballon1.svg" alt="" />
-        <img src="img/ballon2.svg" alt="" />
-        <img src="img/ballon1.svg" alt="" />
-        <img src="img/ballon3.svg" alt="" />
-        <img src="img/ballon3.svg" alt="" />
-        <img src="img/ballon1.svg" alt="" />
-        <img src="img/ballon2.svg" alt="" />
-        <img src="img/ballon3.svg" alt="" />
-        <img src="img/ballon2.svg" alt="" />
-        <img src="img/ballon1.svg" alt="" />
-        <img src="img/ballon3.svg" alt="" />
-        <img src="img/ballon2.svg" alt="" />
-        <img src="img/ballon3.svg" alt="" />
-        <img src="img/ballon1.svg" alt="" />
-        <img src="img/ballon2.svg" alt="" />
-        <img src="img/ballon1.svg" alt="" />
-        <img src="img/ballon3.svg" alt="" />
-      </div>
-    </div>
+<!-- Jangan Edit Bagian Ini --><script>
+  ftom=0;jikakuis=0;ftganti=0;flag=1;flagg=1;fungsi=0;fungsiAwal=0;
+  pesanwhatsapp = pesanWA.innerHTML;Content.style = "opacity:1;margin-top:15vh;";ket.style="margin-top:30px";Bn.style.display="none";
+  
+  function memulai(){if(fungsiAwal==0){audio.play();fungsiAwal=1;suratin.style="transition:all 1s ease;transform:scale(.1);opacity:0";ket.style="transition:all 1s ease;transform:scale(.1);opacity:0";setTimeout(mulaikonten,500)}}
+  
+  function mulaikonten() {
+    setTimeout(tombol,1000);otomatis();
+    suratin.style="display:none";ket.style="display:none";
+    Content.style = "opacity:1;margin-top:4vh";
+    bodyblur.style="opacity:.5;animation:none";
+    wallpaper.style="transform: scale(1);opacity:1;";
+    fotoakhir.style="display:inline-flex;";setTimeout(ftmuncul,200);
+    bq.style = "position:relative;opacity:1;visibility:visible;transform: scale(1);margin-top:0";fungsi=1;
+  }
+  
+  function ftmuncul(){
+    if(ftganti==0){fotoakhir.style="display:inline-flex;opacity:1;transform:scale(1)";}
+    if(ftganti==1){fotoakhir.src = fotoakhir2.src;fotoakhir.style="display:inline-flex;opacity:1;transition:all .7s ease;transform:scale(1);";}
+    if(ftganti==2){fotoakhir.src = fotoakhir3.src;fotoakhir.style="display:inline-flex;opacity:1;transition:all .7s ease;transform:scale(1);";}
+    if(ftganti==3){fotoakhir.src = fotoakhir4.src;fotoakhir.style="display:inline-flex;opacity:1;transition:all .7s ease;transform:scale(1);";}
+  }
+  function fthilang(){fotoakhir.style="display:inline-flex;opacity:1;transition:all .7s ease;transform:scale(.1)";}
+  function jjfoto(){fotoakhir.style.animation="rto .8s infinite alternate";}
+  
+  function tombol(){ftom=1;Tombol.style="opacity:1;transform: scale(1);";if(jikakuis==1){tmbl.innerHTML="Mau";Bn.style="margin:12px 0 12px 12px";ftom=2}}
+  function multifungsi(){if(ftom==1){lanjut();} if(ftom==2){diterima();} if(ftom==5){menuju();}}
+  async function menuju(){await swals.fire('OK!', 'Kirim pesan ke WhatsApp aku, ya!', 'success');window.location = "https://api.whatsapp.com/send?phone=&text=" + pesanwhatsapp;Tombol.style="margin-top:15px;opacity:1;transform: scale(1);";}
 
-    <div class="eight">
-      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="20" cy="20" r="20" />
-      </svg>
-      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="20" cy="20" r="20" />
-      </svg>
-      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="20" cy="20" r="20" />
-      </svg>
-      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="20" cy="20" r="20" />
-      </svg>
-      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="20" cy="20" r="20" />
-      </svg>
-      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="20" cy="20" r="20" />
-      </svg>
-      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="20" cy="20" r="20" />
-      </svg>
-      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="20" cy="20" r="20" />
-      </svg>
-      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="20" cy="20" r="20" />
-      </svg>
-    </div>
-
-    <div class="nine">
-      <p> 
-      <a href="https://hbdsiska.000webhostapp.com/index.html">lanjut?</a></p>
-      <p id="replay"> click, if you want to watch it again.</p>
-      <p class="last-smile">:)</p>
-    </div>
-  </div>
-
+  const body = document.querySelector("body");const swalst = Swal.mixin({timer: 2777, allowOutsideClick: false, showConfirmButton: false, timerProgressBar: true, imageHeight: 90,}); audio = new Audio('' + linkmp3.innerHTML);const swals = Swal.mixin({allowOutsideClick: false, cancelButtonColor: '#FF0040', imageWidth: 100, imageHeight: 100,}); const style = document.createElement('style'); var today = new Date();var dd = String(today.getDate()).padStart(2, '0');var mm = String(today.getMonth() + 1).padStart(2, '0');var yyyy = today.getFullYear();const monthNames = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"];today = dd + ' ' + monthNames[today.getMonth()] + ' ' + yyyy;
+  audio = new Audio('' + linkmp3.src);
+  
+   function createHeart() {const heart = document.createElement("div"); heart.className = "fas fa-heart"; heart.style.left = (Math.random() * 90)+"vw"; heart.style.animationDuration = (Math.random()*3)+2+"s"; body.appendChild(heart);} setInterval(function name(params) {var heartArr = document.querySelectorAll(".fa-heart"); if (heartArr.length > 100) {heartArr[0].remove()}},100);
+</script>
+<!-- Sampai Sini -->
 </body>
-  <!-- Greensock -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
-  <!-- Sweetalert -->
-  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <script type="application/javascript" src="script/main.js"></script>
-
 </html>
